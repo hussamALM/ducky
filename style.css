@@ -5,6 +5,7 @@
 :root {
   --color-primary: aquamarine;
   --color-grey: #f7f7f7;
+  --color-primary-dark: rgb(65, 131, 109);
 }
 html {
   font-size: 62.5%; /*to make one rem = 10px*/
@@ -19,9 +20,28 @@ html {
   text-transform: capitalize;
 }
 
+.heading__secondary {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
 .paragraph {
   font-size: 1.5rem;
+  line-height: 2rem;
 }
+.btn {
+  border-radius: 100px;
+  border: none;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+}
+.btn-primary {
+  display: block;
+  margin: 0 auto;
+  color: white;
+  background-color: var(--color-primary-dark);
+}
+
 /* ////////////////// intro section ////////////////////// */
 .section__intro {
   height: 95vh;
@@ -43,7 +63,6 @@ html {
   cursor: pointer;
   display: block;
   width: 30%;
-  order: 1;
   border-radius: 3px;
   transition: all 0.2s;
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.4);
@@ -53,5 +72,28 @@ html {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.6);
 }
 .intro__desc {
+  width: 30%;
+}
+
+.intro__cta {
+  margin-top: 5rem;
+  height: 15%;
+  text-align: center;
+}
+.intro__label-group {
+  display: inline-block;
+  margin-right: 2rem;
+}
+.intro__cta-label {
+  font-size: 1.5rem;
+}
+.intro__btn {
+  cursor: pointer;
+  font-size: 2.2rem;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+}
+.cta__info {
+  margin: 0 auto;
   width: 30%;
 }
